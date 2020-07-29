@@ -1,0 +1,137 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:1:1-52:12
+INJECTED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:1:1-52:12
+INJECTED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:1:1-52:12
+INJECTED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:1:1-52:12
+INJECTED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:1:1-52:12
+INJECTED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:1:1-52:12
+INJECTED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:1:1-52:12
+	package
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:2:5-35
+		INJECTED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:1:1-52:12
+		INJECTED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:1:1-52:12
+		INJECTED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:6:5-67
+	android:name
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:6:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:7:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:8:5-76
+	android:name
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:8:22-73
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:9:5-75
+	android:name
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:9:22-72
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:10:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:11:22-76
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:12:5-81
+	android:name
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:12:22-78
+uses-permission#android.permission.REQUEST_INSTALL_PACKAGES
+ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:13:5-83
+	android:name
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:13:22-80
+application
+ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:15:5-51:19
+	android:label
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:17:9-41
+	android:usesCleartextTraffic
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:16:9-44
+meta-data#com.tencent.rdm.uuid
+ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:18:9-20:68
+	android:value
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:20:13-65
+	android:name
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:19:13-48
+uses-library#org.apache.http.legacy
+ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:21:9-23:40
+	android:required
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:23:13-37
+	android:name
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:22:13-50
+provider#androidx.core.content.FileProvider
+ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:24:9-34:20
+	android:grantUriPermissions
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:29:13-47
+	android:authorities
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:28:13-37
+	tools:replace
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:27:13-48
+	android:name
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:25:13-62
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:30:13-33:52
+	android:resource
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:32:17-54
+	tools:replace
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:31:17-67
+service#com.qq.e.comm.DownloadService
+ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:35:9-37:40
+	android:exported
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:37:13-37
+	android:name
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:36:13-57
+activity#com.qq.e.ads.ADActivity
+ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:38:9-40:86
+	android:configChanges
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:40:13-83
+	android:name
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:39:13-51
+activity#com.qq.e.ads.PortraitADActivity
+ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:41:9-44:52
+	android:screenOrientation
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:44:13-49
+	android:configChanges
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:43:13-83
+	android:name
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:42:13-59
+activity#com.qq.e.ads.LandscapeADActivity
+ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:45:9-48:53
+	android:screenOrientation
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:48:13-50
+	android:configChanges
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:47:13-83
+	android:name
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml:46:13-60
+uses-sdk
+INJECTED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml
+INJECTED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml
+INJECTED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml
+INJECTED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml
+		ADDED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/liangfengsid/github/SnapRead/node_modules/react-native-gdt-ad/android/src/main/AndroidManifest.xml

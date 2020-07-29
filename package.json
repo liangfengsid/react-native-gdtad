@@ -1,0 +1,51 @@
+{
+  "_from": "react-native-gdt-ad@^1.0.5",
+  "_id": "react-native-gdt-ad@1.0.5",
+  "_inBundle": false,
+  "_integrity": "sha512-iIBYAnfUQqoloFyazoBvUgu23Bgg+pfb+ll/wJLgWg5qWbhLlJrqbDODifoJAA619Op4F6nW1gjiW578pCb7sA==",
+  "_location": "/react-native-gdt-ad",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "react-native-gdt-ad@^1.0.5",
+    "name": "react-native-gdt-ad",
+    "escapedName": "react-native-gdt-ad",
+    "rawSpec": "^1.0.5",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.5"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-gdt-ad/-/react-native-gdt-ad-1.0.5.tgz",
+  "_shasum": "496d48558ddc135e0f60bf7ec7f7e8f81a0d9caa",
+  "_spec": "react-native-gdt-ad@^1.0.5",
+  "_where": "/Users/liangfengsid/github/SnapRead",
+  "author": {
+    "name": "lijian",
+    "email": "lijian0103@hotmail.com"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Tencent AD, 腾讯广点通/优量汇SDK",
+  "keywords": [
+    "react-native",
+    "android",
+    "gdt",
+    "ad",
+    "react"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "react-native-gdt-ad",
+  "peerDependencies": {
+    "react": "^16.5.1",
+    "react-native": "^0.57.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.5"
+}
