@@ -4,10 +4,13 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReadableMap;
+import com.facebook.react.bridge.Callback;
 
 import cn.cnlee.commons.gdt.view.Hybrid;
 import cn.cnlee.commons.gdt.view.Interstitial;
 import cn.cnlee.commons.gdt.view.UnifiedInterstitial;
+import cn.cnlee.commons.gdt.view.RewardVideo;
+import com.qq.e.comm.managers.GDTADManager;
 
 
 public class GDTModule extends ReactContextBaseJavaModule {
@@ -26,6 +29,12 @@ public class GDTModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
+    public void init(String appID) {
+        // Init GDT sdk
+        GDTADManager.getInstance().initWith(mContext, appID);
+    }
+
+    @ReactMethod
     public void showUnifiedInterstitialAD(String appID, String posID, boolean asPopup) {
         UnifiedInterstitial unifiedInterstitial = UnifiedInterstitial.getInstance(mContext);
         unifiedInterstitial.showUnifiedInterstitialAD(appID, posID, asPopup);
@@ -35,6 +44,12 @@ public class GDTModule extends ReactContextBaseJavaModule {
     public void showInterstitialAD(String appID, String posID, boolean asPopup) {
         Interstitial interstitial = Interstitial.getInstance(mContext);
         interstitial.showInterstitialAD(appID, posID, asPopup);
+    }
+
+    @ReactMethod
+    public void showRewardVideoAD(String posID, Callback onReward) {
+        RewardVideo rewardVideo = RewardVideo.getInstance(mContext, onReward);
+        rewardVideo.showRewardVideoAD(posID);
     }
 
     /***

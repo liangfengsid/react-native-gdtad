@@ -308,6 +308,8 @@ attr itemTextAppearanceActive
 attr itemTextAppearanceInactive
 attr itemTextColor
 attr keylines
+attr ksad_radius
+attr ksad_root_layout
 attr labelVisibilityMode
 attr lastBaselineToBottomHeight
 attr layout
@@ -1041,10 +1043,59 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable gdt_ic_back
+drawable gdt_ic_browse
+drawable gdt_ic_download
+drawable gdt_ic_enter_fullscreen
+drawable gdt_ic_exit_fullscreen
+drawable gdt_ic_express_back_to_port
+drawable gdt_ic_express_close
+drawable gdt_ic_express_enter_fullscreen
+drawable gdt_ic_express_pause
+drawable gdt_ic_express_play
+drawable gdt_ic_express_volume_off
+drawable gdt_ic_express_volume_on
+drawable gdt_ic_native_back
+drawable gdt_ic_native_download
+drawable gdt_ic_native_volume_off
+drawable gdt_ic_native_volume_on
+drawable gdt_ic_pause
+drawable gdt_ic_play
+drawable gdt_ic_progress_thumb_normal
+drawable gdt_ic_replay
+drawable gdt_ic_seekbar_background
+drawable gdt_ic_seekbar_progress
+drawable gdt_ic_volume_off
+drawable gdt_ic_volume_on
 drawable gdt_splash_logo
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ksad_ad_label_bg
+drawable ksad_app_download_icon
+drawable ksad_default_app_icon
+drawable ksad_h5_detail_icon
+drawable ksad_notification_default_icon
+drawable ksad_notification_install_bg
+drawable ksad_notification_progress
+drawable ksad_notification_small_icon
+drawable ksad_video_actionbar_app_progress
+drawable ksad_video_actionbar_cover_bg
+drawable ksad_video_actionbar_cover_pressed
+drawable ksad_video_actionbar_h5_bg
+drawable ksad_video_app_12_bg
+drawable ksad_video_app_16_bg
+drawable ksad_video_app_20_bg
+drawable ksad_video_btn_bg
+drawable ksad_video_closedialog_bg
+drawable ksad_video_page_close
+drawable ksad_video_reward_icon
+drawable ksad_video_skip_icon
+drawable ksad_video_sound_close
+drawable ksad_video_sound_open
+drawable ksad_video_sound_selector
+drawable ksad_webview_titlebar_back
+drawable ksad_webview_titlebar_back_normal
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1088,11 +1139,16 @@ id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
 id action_text
+id actionbar
 id actions
 id activity_chooser_view_content
+id ad_label_play_bar
 id add
 id alertTitle
+id app_icon
+id app_introduce
 id app_logo
+id app_name
 id async
 id auto
 id blocking
@@ -1105,9 +1161,11 @@ id centerCrop
 id centerInside
 id checkbox
 id chronometer
+id close_btn
 id container
 id content
 id contentPanel
+id continue_btn
 id coordinator
 id custom
 id customPanel
@@ -1118,6 +1176,15 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id download_bar
+id download_bar_cover
+id download_icon
+id download_install
+id download_name
+id download_percent_num
+id download_progress
+id download_size
+id download_status
 id edit_query
 id end
 id end_padder
@@ -1145,6 +1212,15 @@ id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
+id ksad_endbar_appicon
+id ksad_endbar_desc
+id ksad_endbar_downloadBtn
+id ksad_endbar_title
+id ksad_video_close_h5
+id ksad_video_webview
+id kwad_adwebview
+id kwad_titlebar_lefimg
+id kwad_titlebar_title
 id labeled
 id largeLabel
 id left
@@ -1173,6 +1249,7 @@ id parentPanel
 id parent_matrix
 id percent
 id pin
+id play_bar_desc
 id progress_circular
 id progress_horizontal
 id radio
@@ -1255,6 +1332,26 @@ id transition_transform
 id uniform
 id unlabeled
 id up
+id video_app_tail_frame
+id video_count_down
+id video_h5_tail_frame
+id video_landscape_horizontal
+id video_landscape_vertical
+id video_page_close
+id video_play_bar_app
+id video_play_bar_h5
+id video_portrait_horizontal
+id video_portrait_vertical
+id video_reward_icon
+id video_skip_icon
+id video_sound_switch
+id video_tail_frame_container
+id video_texture_view
+id video_thumb_container
+id video_thumb_img
+id video_thumb_left
+id video_thumb_mid
+id video_thumb_right
 id view_offset_helper
 id view_tag_instance_handle
 id view_tag_native_id
@@ -1326,6 +1423,25 @@ layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout dev_loading_view
 layout fps_view
+layout ksad_activity_fullscreen_video
+layout ksad_activity_reward_video
+layout ksad_activity_webview
+layout ksad_dialog_adwebview
+layout ksad_notification_download_completed
+layout ksad_notification_download_progress
+layout ksad_video_close_dialog
+layout ksad_video_play_bar_app
+layout ksad_video_play_bar_h5
+layout ksad_video_tf_bar_app_landscape
+layout ksad_video_tf_bar_app_portrait_horizontal
+layout ksad_video_tf_bar_app_portrait_vertical
+layout ksad_video_tf_bar_h5_landscape
+layout ksad_video_tf_bar_h5_portrait_horizontal
+layout ksad_video_tf_bar_h5_portrait_vertical
+layout ksad_video_tf_view_landscape_horizontal
+layout ksad_video_tf_view_landscape_vertical
+layout ksad_video_tf_view_portrait_horizontal
+layout ksad_video_tf_view_portrait_vertical
 layout layout_banner
 layout layout_splash
 layout mtrl_layout_snackbar
@@ -1434,6 +1550,15 @@ string header_description
 string hide_bottom_view_on_scroll_behavior
 string image_description
 string imagebutton_description
+string ksad_download_finished
+string ksad_download_install
+string ksad_download_installing
+string ksad_download_now
+string ksad_download_open
+string ksad_install_failed
+string ksad_look_detail
+string ksad_video_dialog_close_tip
+string ksad_video_dialog_close_tip_30s
 string link_description
 string menu_description
 string menubar_description
@@ -2027,6 +2152,8 @@ styleable ForegroundLinearLayout android_foreground android_foregroundGravity fo
 styleable GenericDraweeHierarchy actualImageScaleType backgroundImage fadeDuration failureImage failureImageScaleType overlayImage placeholderImage placeholderImageScaleType pressedStateOverlayImage progressBarAutoRotateInterval progressBarImage progressBarImageScaleType retryImage retryImageScaleType roundAsCircle roundBottomEnd roundBottomLeft roundBottomRight roundBottomStart roundTopEnd roundTopLeft roundTopRight roundTopStart roundWithOverlayColor roundedCornerRadius roundingBorderColor roundingBorderPadding roundingBorderWidth viewAspectRatio
 styleable GradientColor android_centerColor android_centerX android_centerY android_endColor android_endX android_endY android_gradientRadius android_startColor android_startX android_startY android_tileMode android_type
 styleable GradientColorItem android_color android_offset
+styleable KsadRoundImageView ksad_radius
+styleable KsadVideoTailFrameActionBar ksad_root_layout
 styleable LinearConstraintLayout android_orientation
 styleable LinearLayoutCompat android_baselineAligned android_baselineAlignedChildIndex android_gravity android_orientation android_weightSum divider dividerPadding measureWithLargestChild showDividers
 styleable LinearLayoutCompat_Layout android_layout_gravity android_layout_height android_layout_weight android_layout_width
@@ -2062,4 +2189,5 @@ styleable View android_focusable android_theme paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewStubCompat android_id android_inflatedId android_layout
 xml gdt_file_path
+xml ksad_file_paths
 xml rn_dev_preferences

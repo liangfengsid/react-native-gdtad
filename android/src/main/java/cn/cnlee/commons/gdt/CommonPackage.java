@@ -25,6 +25,7 @@ public class CommonPackage implements ReactPackage{
         List<ViewManager> list = new ArrayList<>();
         list.add(new GDTBannerViewManager());
         list.add(new GDTUnifiedBannerViewManager());
+        list.add(new GDTNativeExpressViewManager());
         list.add(new GDTSplashViewManager());
         return list;
     }

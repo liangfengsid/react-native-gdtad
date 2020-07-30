@@ -55,39 +55,45 @@ public class UnifiedInterstitial implements UnifiedInterstitialADListener {
     }
 
     @Override
+    public void onVideoCached() {
+        // 视频素材加载完成，在此时调用iad.show()或iad.showAsPopupWindow()视频广告不会有进度条。
+        Log.i(TAG, "onVideoCached");
+    }
+
+    @Override
     public void onADOpened() {
-        Log.e(TAG,"onADOpened");
+        Log.i(TAG,"onADOpened");
     }
 
     @Override
     public void onADExposure() {
-        Log.e(TAG,"onADExposure");
+        Log.i(TAG,"onADExposure");
     }
 
     @Override
     public void onADClosed() {
-        Log.e(TAG,"onADClosed");
+        Log.i(TAG,"onADClosed");
     }
 
     @Override
     public void onADClicked() {
-        Log.e(TAG,"onADClicked");
+        Log.i(TAG,"onADClicked");
     }
 
     @Override
     public void onADLeftApplication() {
-        Log.e(TAG,"onADLeftApplication");
+        Log.i(TAG,"onADLeftApplication");
     }
 
     public void showUnifiedInterstitialAD(String appID, String posID, boolean asPopup) {
-        Log.e(TAG, "showUnifiedInterstitialAD");
+        Log.i(TAG, "showUnifiedInterstitialAD");
         this.asPopup = asPopup;
         getIAD(appID, posID).loadAD();
     }
 
     private UnifiedInterstitialAD getIAD(String appID, String posID) {
         if (iad != null && this.posID.equals(posID)) {
-            Log.e(TAG,"======相同IAD无需创建新的======");
+            Log.i(TAG,"======相同IAD无需创建新的======");
             return iad;
         }
         this.posID = posID;
