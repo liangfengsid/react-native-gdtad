@@ -28,7 +28,7 @@ public class Splash extends RelativeLayout {
     private SplashAD mSplashAD;
     private Runnable mLayoutRunnable;
 
-    public Splash(Context context, String appID, String posID, SplashADListener listener, int fetchDelay) {
+    public Splash(Context context, String posID, SplashADListener listener, int fetchDelay) {
         super(context);
         // 把布局加载到这个View里面
         inflate(context, R.layout.layout_splash, this);
@@ -36,18 +36,15 @@ public class Splash extends RelativeLayout {
         skipView = findViewById(R.id.skip_view);
         logoView = findViewById(R.id.app_logo);
         splashHolder = findViewById(R.id.splash_holder);
-        initView(appID, posID, listener, fetchDelay);
+        initView(posID, listener, fetchDelay);
     }
 
 
     /**
      * 初始化View
      */
-    private void initView(String appID, String posID, SplashADListener listener, int fetchDelay) {
-        Map<String, String> tags = new HashMap<>();
-        tags.put("tag_s1", "value_s1");
-        tags.put("tag_s2", "value_s2");
-        mSplashAD = new SplashAD((Activity) this.getContext(), container, skipView, appID, posID, listener, fetchDelay, tags);
+    private void initView(String posID, SplashADListener listener, int fetchDelay) {
+        mSplashAD = new SplashAD((Activity) this.getContext(), skipView, posID, listener, fetchDelay);
     }
 
     public void showLogo(boolean show) {

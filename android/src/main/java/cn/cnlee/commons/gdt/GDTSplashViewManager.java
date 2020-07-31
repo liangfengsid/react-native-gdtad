@@ -36,14 +36,14 @@ public class GDTSplashViewManager extends SimpleViewManager implements SplashADL
 
     @Override
     public void onNoAD(AdError adError) {
-        Log.e(TAG, "onNoAD: eCode=" + adError.getErrorCode() + ",eMsg=" + adError.getErrorMsg());
+        Log.i(TAG, "onNoAD: eCode=" + adError.getErrorCode() + ",eMsg=" + adError.getErrorMsg());
         WritableMap event = Arguments.createMap();
         event.putString("error", new Gson().toJson(adError));
         mEventEmitter.receiveEvent(mContainer.getId(), Events.EVENT_FAIL_TO_RECEIVED.toString(), event);
         long alreadyDelayMills = System.currentTimeMillis() - fetchSplashADTime;//从拉广告开始到onNoAD已经消耗了多少时间
         //为防止加载广告失败后立刻跳离开屏可能造成的视觉上类似于"闪退"的情况，根据设置的minSplashTimeWhenNoAD 计算出还需要延时多久
         long shouldDelayMills = alreadyDelayMills > minSplashTimeWhenNoAD ? 0 : minSplashTimeWhenNoAD - alreadyDelayMills;
-        Log.e(TAG, "shouldDelayMills: " + shouldDelayMills);
+        Log.i(TAG, "shouldDelayMills: " + shouldDelayMills);
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -53,8 +53,16 @@ public class GDTSplashViewManager extends SimpleViewManager implements SplashADL
     }
 
     @Override
+    public void onADLoaded(long expireTimestamp) {
+        Log.i("TAG", "SplashADFetch expireTimestamp: " + expireTimestamp);
+        WritableMap event = Arguments.createMap();
+        event.putString("expireTimeStamp", expireTimestamp + "");
+        mEventEmitter.receiveEvent(mContainer.getId(), Events.EVENT_LOADED.toString(), event);
+    }
+
+    @Override
     public void onADPresent() {
-        Log.e(TAG, "onADPresent");
+        Log.i(TAG, "onADPresent");
         if (mSplash != null) {
             mSplash.hideSplashHolder(true);
             mSplash.requestLayout();
@@ -64,26 +72,26 @@ public class GDTSplashViewManager extends SimpleViewManager implements SplashADL
 
     @Override
     public void onADExposure() {
-        Log.e(TAG, "onADExposure");
+        Log.i(TAG, "onADExposure");
         mEventEmitter.receiveEvent(mContainer.getId(), Events.EVENT_WILL_EXPOSURE.toString(), null);
     }
 
     @Override
     public void onADDismissed() {
-        Log.e(TAG, "onADDismissed");
+        Log.i(TAG, "onADDismissed");
         mEventEmitter.receiveEvent(mContainer.getId(), Events.EVENT_WILL_DISMISSED.toString(), null);
         nextAction();
     }
 
     @Override
     public void onADClicked() {
-        Log.e(TAG, "onADClicked");
+        Log.i(TAG, "onADClicked");
         mEventEmitter.receiveEvent(mContainer.getId(), Events.EVENT_ON_CLICK.toString(), null);
     }
 
     @Override
     public void onADTick(long millisUntilFinished) {
-        Log.e(TAG, "onADTick " + millisUntilFinished + "ms");
+        Log.i(TAG, "onADTick " + millisUntilFinished + "ms");
         if (mSplash != null) {
             mSplash.setTickTxt(millisUntilFinished);
         }
@@ -98,6 +106,7 @@ public class GDTSplashViewManager extends SimpleViewManager implements SplashADL
 
     public enum Events {
         EVENT_FAIL_TO_RECEIVED("onFailToReceived"),
+        EVENT_LOADED("onLoaded"),
         EVENT_PRESENT("onPresent"),
         EVENT_WILL_DISMISSED("onDismissed"),
         EVENT_NEXT_ACTION("onNextAction"),
@@ -158,11 +167,10 @@ public class GDTSplashViewManager extends SimpleViewManager implements SplashADL
     // 组件的每一个属性的设置都会调用Java层被对应ReactProp注解的方法
     @ReactProp(name = "appInfo")
     public void setAppInfo(FrameLayout view, ReadableMap appInfo) {
-        String appID = appInfo.getString("appId");
         String posID = appInfo.getString("posId");
-        Log.e(TAG, "fetchDelay: " + fetchDelay);
+        Log.i(TAG, "fetchDelay: " + fetchDelay);
         fetchSplashADTime = System.currentTimeMillis();
-        Splash splash = new Splash(mThemedReactContext.getCurrentActivity(), appID, posID, this, this.fetchDelay);
+        Splash splash = new Splash(mThemedReactContext.getCurrentActivity(), posID, this, this.fetchDelay);
         mSplash = splash;
         view.addView(splash);
     }

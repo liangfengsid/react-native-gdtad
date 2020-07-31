@@ -34,7 +34,7 @@ public class GDTBannerViewManager extends SimpleViewManager implements BannerADL
 
     @Override
     public void onNoAD(AdError adError) {
-        Log.e(TAG,"onNoAD: eCode=" + adError.getErrorCode() + ",eMsg=" + adError.getErrorMsg());
+        Log.i(TAG,"onNoAD: eCode=" + adError.getErrorCode() + ",eMsg=" + adError.getErrorMsg());
         WritableMap event = Arguments.createMap();
         event.putString("error", new Gson().toJson(adError));
         mEventEmitter.receiveEvent(mContainer.getId(), Events.EVENT_FAIL_TO_RECEIVED.toString(), event);
@@ -42,44 +42,44 @@ public class GDTBannerViewManager extends SimpleViewManager implements BannerADL
 
     @Override
     public void onADReceiv() {
-        Log.e(TAG,"onADReceive");
+        Log.i(TAG,"onADReceive");
         mEventEmitter.receiveEvent(mContainer.getId(), Events.EVENT_RECEIVED.toString(), null);
     }
 
     @Override
     public void onADExposure() {
-        Log.e(TAG,"onADExposure");
+        Log.i(TAG,"onADExposure");
         mEventEmitter.receiveEvent(mContainer.getId(), Events.EVENT_WILL_EXPOSURE.toString(), null);
     }
 
     @Override
     public void onADClosed() {
-        Log.e(TAG,"onADClosed");
+        Log.i(TAG,"onADClosed");
         mEventEmitter.receiveEvent(mContainer.getId(), Events.EVENT_WILL_CLOSE.toString(), null);
     }
 
     @Override
     public void onADClicked() {
-        Log.e(TAG,"onADClicked");
+        Log.i(TAG,"onADClicked");
         mEventEmitter.receiveEvent(mContainer.getId(), Events.EVENT_ON_CLICK.toString(), null);
     }
 
     @Override
     public void onADLeftApplication() {
-        Log.e(TAG,"onADLeftApplication");
+        Log.i(TAG,"onADLeftApplication");
         mEventEmitter.receiveEvent(mContainer.getId(), Events.EVENT_WILL_LEAVE_APP.toString(), null);
     }
 
     @Override
     public void onADOpenOverlay() {
-        Log.e(TAG,"onADOpenOverlay");
+        Log.i(TAG,"onADOpenOverlay");
         mEventEmitter.receiveEvent(mContainer.getId(), Events.EVENT_WILL_OPEN_FULL_SCREEN.toString(), null);
         mEventEmitter.receiveEvent(mContainer.getId(), Events.EVENT_DID_OPEN_FULL_SCREEN.toString(), null);
     }
 
     @Override
     public void onADCloseOverlay() {
-        Log.e(TAG,"onADCloseOverlay");
+        Log.i(TAG,"onADCloseOverlay");
         mEventEmitter.receiveEvent(mContainer.getId(), Events.EVENT_WILL_CLOSE_FULL_SCREEN.toString(), null);
         mEventEmitter.receiveEvent(mContainer.getId(), Events.EVENT_DID_CLOSE_FULL_SCREEN.toString(), null);
     }

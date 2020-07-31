@@ -37,7 +37,7 @@ public class UnifiedBanner extends FrameLayout {
      */
     private void initView(String appID, String posID, UnifiedBannerADListener listener) {
         closeBanner();
-        mBanner = new UnifiedBannerView((Activity) this.getContext(),appID, posID, listener);
+        mBanner = new UnifiedBannerView((Activity) this.getContext(), posID, listener);
         mBanner.setRefresh(30);
         addView(mBanner);
         getBanner().loadAD();
@@ -48,7 +48,7 @@ public class UnifiedBanner extends FrameLayout {
         if (mBanner != null) {
             mBanner.destroy();
             mBanner = null;
-            Log.e("UnifiedBanner","关闭广告");
+            Log.i("UnifiedBanner","关闭广告");
         }
         if (mLayoutRunnable != null){
             removeCallbacks(mLayoutRunnable);
